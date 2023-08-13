@@ -1,0 +1,61 @@
+/* CSS LAYOUT FOR 2 COLUMNS */
+.layout-2 {
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.layout-2-header {
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      height: 554px;
+      max-height: 554px;
+}
+
+
+
+
+/* CSS LAYOUT FOR 4 COLUMNS */
+.layout-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+}
+
+.layout-4 > div {
+      padding: 20px;
+      text-align: center;
+}
+
+.layout-4 > div:not(:last-child) {
+      border-right: 1px solid #ccc;
+}
+
+.layout-4 > div:first-child {
+      border-right: none;
+}
+/* CSS LAYOUT FOR 4 COLUMNS */
+
+
+
+
+
+/* CUSTOM LAYOUT */
+.layout-2-header {
+      display: flex;
+      align-items: stretch;
+}
+
+.layout-2-header > div {
+      flex: 1;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
