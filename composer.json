@@ -1,0 +1,22 @@
+{
+    "name": "usuario/readcsv",
+    "autoload": {
+        "psr-4": {
+            "Usuario\\Readcsv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Esteban Calle",
+            "email": "softwaretools731@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
+}
